@@ -1,0 +1,16 @@
+div{
+    background:url("./assets/スクリーンショット\ 2025-03-19\ 133502.png") right bottom no-repeat
+}
+
+.px{
+    background-size: 150px 50px;
+}
+.per{
+    background-size: 50% 50%;
+}
+.cov{
+    background-size: cover;
+}
+.con{
+    background-size: contain;
+}
