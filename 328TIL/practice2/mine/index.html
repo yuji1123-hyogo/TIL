@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- プロフィールカード　 -->
+
+    <!-- プロフィールカードは再利用可能コンテンツなのでarticle-->
+    <article class="profileCard">
+        <!-- 画像領域 -->
+        <div class="profileCardImage" >
+            <img src="../default-avatar.png" alt="">
+        </div>
+        <!-- 文章領域 -->
+        <div class="profileCardText">
+            <!-- 改行されている = ブロック要素 　で　かつ、テキスト要素　⇒ pタグだと考えた-->
+            <h2 class="username">山田太郎</h2>
+            <p class="occupation">Webデザイナー</p>
+            <p class="description">
+                UI/UXデザインとフロントエンド開発が得意なWebデザイナーです。 使いやすく美しいWebサイト制作を心がけています。
+            </p>
+
+
+
+            <!-- リンク要素のセクション　⇒　navだと考えた -->
+            <nav class="profileLink">
+                <a href="#">Twitter</a>
+                <a href="#"> Instagram</a>
+                <a href="#">GitHub</a>
+            </nav>
+
+            <button>お問い合わせ</button>
+        </div>
+    </article>
+    
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品一覧 | ECサイト</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts読み込み（任意） -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ヘッダーナビゲーション -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- ロゴ -->
+        <h1 class="logo">
+          <a href="index.html">ECサイト</a>
+        </h1>
+        
+        <!-- ナビゲーションメニュー -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">ナビゲーション</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active">ナビゲーション</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">ナビゲーション</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">ナビゲーション</a></li>
+          </ul>
+        </nav>
+        
+        <!-- 検索とカートのアイコン -->
+        <div class="header-icons">
+          <a href="#" class="icon-link">検索</a>
+          <a href="#" class="icon-link">カート(0)</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- メインコンテンツ -->
+  <main class="main">
+    <div class="container">
+      <!-- 見出し -->
+      <h2 class="section-title">新着商品</h2>
+      
+      <!-- 商品カードのグリッド -->
+      <div class="product-grid">
+        <!-- 商品カード1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.jp/250x200.png" alt="商品1の画像">
+            <span class="product-tag">新着</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">スタイリッシュなデスクライト</h3>
+            <p class="product-description">省スペースで使いやすいLEDライト。調光機能付き。</p>
+            <div class="product-price-row">
+              <p class="product-price">¥5,980</p>
+              <button class="add-to-cart-button">カートに追加</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 商品カード2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.jp/250x200.png" alt="商品2の画像">
+            <span class="product-tag sale">セール</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">ワイヤレスイヤホン</h3>
+            <p class="product-description">高音質・長時間再生可能なBluetooth対応イヤホン。</p>
+            <div class="product-price-row">
+              <p class="product-price"><span class="original-price">¥12,800</span> ¥9,800</p>
+              <button class="add-to-cart-button">カートに追加</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 商品カード3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.jp/250x200.png" alt="商品3の画像">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">コンパクト折りたたみ傘</h3>
+            <p class="product-description">持ち運びに便利な軽量タイプ。撥水加工済み。</p>
+            <div class="product-price-row">
+              <p class="product-price">¥3,480</p>
+              <button class="add-to-cart-button">カートに追加</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 商品カード4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.jp/250x200.png" alt="商品4の画像">
+            <span class="product-tag limited">限定</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">ステンレスボトル</h3>
+            <p class="product-description">保温・保冷両対応の真空断熱構造。漏れ防止設計。</p>
+            <div class="product-price-row">
+              <p class="product-price">¥4,280</p>
+              <button class="add-to-cart-button">カートに追加</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 商品カード5 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.jp/250x200.png" alt="商品5の画像">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">モバイルバッテリー</h3>
+            <p class="product-description">10,000mAhの大容量。急速充電対応。複数デバイス同時充電可能。</p>
+            <div class="product-price-row">
+              <p class="product-price">¥6,980</p>
+              <button class="add-to-cart-button">カートに追加</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 商品カード6 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://placehold.jp/250x200.png" alt="商品6の画像">
+            <span class="product-tag sale">セール</span>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">スマートウォッチ</h3>
+            <p class="product-description">健康管理機能搭載。防水・長時間バッテリー。</p>
+            <div class="product-price-row">
+              <p class="product-price"><span class="original-price">¥15,800</span> ¥12,800</p>
+              <button class="add-to-cart-button">カートに追加</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2023 ECサイト All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

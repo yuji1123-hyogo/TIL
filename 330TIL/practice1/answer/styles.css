@@ -1,0 +1,100 @@
+/* 全体のリセットとベースとなるスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  /* プロフィールカードのスタイル */
+  .profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* プロフィールヘッダー部分 */
+  .profile-header {
+    background-color: #4a6fdc;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-title {
+    font-size: 16px;
+    opacity: 0.9;
+  }
+  
+  /* プロフィール本文部分 */
+  .profile-bio,
+  .profile-skills,
+  .profile-contact {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .profile-bio h2,
+  .profile-skills h2,
+  .profile-contact h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4a6fdc;
+  }
+  
+  /* スキルリストのスタイル */
+  .profile-skills ul {
+    list-style-type: none;
+  }
+  
+  .profile-skills li {
+    display: inline-block;
+    background-color: #f1f5fd;
+    color: #4a6fdc;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+  }
+  
+  /* コンタクトボタン */
+  .contact-button {
+    display: inline-block;
+    background-color: #4a6fdc;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #3a5fcc;
+  }

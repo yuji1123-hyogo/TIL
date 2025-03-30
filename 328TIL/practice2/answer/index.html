@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!-- HTML5の宣言 -->
+<html lang="ja"> <!-- 日本語のページであることを示す -->
+<head>
+  <!-- 文字コードの指定（日本語を正しく表示するために必要） -->
+  <meta charset="UTF-8">
+  
+  <!-- レスポンシブデザイン対応のためのビューポート設定
+       width=device-width: デバイスの画面幅に合わせる
+       initial-scale=1.0: 初期表示の拡大率 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ブラウザのタブやブックマークに表示されるタイトル -->
+  <title>プロフィールカード</title>
+  
+  <!-- CSSファイルをリンク（スタイルと構造を分離するベストプラクティス） -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body> <!-- ページの表示内容が入る本体部分 -->
+  
+  <!-- プロフィールカード全体を囲むコンテナ
+       classを付けることで、CSSでスタイリングできるようにする -->
+  <div class="card">
+    
+    <!-- プロフィール画像を配置するセクション -->
+    <div class="card-image">
+      <!-- 画像の表示
+           src: 画像のパス（ここではプレースホルダーを使用）
+           alt: 画像が表示されない場合や読み上げソフトのための代替テキスト
+                アクセシビリティのために重要 -->
+      <img src="https://placehold.jp/150x150.png" alt="プロフィール画像">
+    </div>
+    
+    <!-- テキストコンテンツを配置するセクション -->
+    <div class="card-content">
+      <!-- 名前を見出しとして表示（h2は重要度の高い見出し） -->
+      <h2 class="name">山田 太郎</h2>
+      
+      <!-- 肩書き・役職情報 -->
+      <p class="title">Webデザイナー</p>
+      
+      <!-- 自己紹介文章 -->
+      <p class="description">
+        UI/UXデザインとフロントエンド開発が得意なWebデザイナーです。
+        使いやすく美しいWebサイト制作を心がけています。
+      </p>
+      
+      <!-- ソーシャルメディアリンクを配置するコンテナ -->
+      <div class="social-links">
+        <!-- aタグを使ったハイパーリンク
+             href="#": 仮のリンク先（実際には各SNSのURLを設定） -->
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">GitHub</a>
+      </div>
+      
+      <!-- ボタン要素
+           クリックできる要素として明示的にbuttonタグを使用 -->
+      <button class="contact-button">お問い合わせ</button>
+    </div>
+  </div>
+</body>
+</html>

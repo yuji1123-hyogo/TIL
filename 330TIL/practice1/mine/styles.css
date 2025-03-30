@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+.container{
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.profile-card{
+    width:100%;
+    max-width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: aliceblue;
+    box-shadow: 10px 1px 20px 16px rgba(17,17,26,0.08);
+}
+
+
+.profile-card__header{
+    background-color: #4a6fdc;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.profile-card__imag{
+    border-radius: 50%;
+    border: #f5f7fa 3px solid;
+}
+.profile-card__name{
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin:10px 0;
+}
+.profile-card__job{
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.profile-card__bio,.profile-card__skill{
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+.profile-card__contact{
+    padding: 15px 20px;
+}
+
+
+.profile-card__bio-title,.profile-card__skill-title,.profile-card__contact-title{
+    font-size: 18px;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+
+.profile-card__bio-text,.profile-card__skill-text{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.profile-card__contact-button{
+    background-color: #4a6fdc;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+}

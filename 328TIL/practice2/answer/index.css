@@ -1,0 +1,156 @@
+/* ===== 基本的なリセットとベーススタイル ===== */
+* {
+    /* ブラウザのデフォルトのマージンをゼロに */
+    margin: 0;
+    /* ブラウザのデフォルトのパディングをゼロに */
+    padding: 0;
+    /* 要素の幅と高さの計算方法を変更
+       borderとpaddingを幅・高さに含める（直感的な設計が可能に） */
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* 日本語フォントのフォールバックを設定（システムフォントを優先的に使用） */
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, sans-serif;
+    /* 背景色を薄いグレーに設定（カードが浮き上がって見える） */
+    background-color: #f5f5f5;
+    
+    /* 以下の3行でコンテンツを画面中央に配置（フレックスボックスレイアウト）
+       display: flex - フレックスコンテナとして機能させる */
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center;     /* 垂直方向の中央揃え */
+    
+    /* 最小の高さをビューポートの高さ（画面の高さ）に設定 */
+    min-height: 100vh;
+    /* コンテンツの周りに余白を設定 */
+    padding: 20px;
+  }
+  
+  /* ===== カード本体のスタイル ===== */
+  .card {
+    /* カードの背景色を白に */
+    background-color: white;
+    /* 角を丸くする（8pxの半径で） */
+    border-radius: 8px;
+    /* 影をつけて浮き上がって見せる
+       0: 水平方向のオフセット
+       2px: 垂直方向のオフセット
+       10px: ぼかしの範囲
+       rgba(0,0,0,0.1): 黒の10%の透明度 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* 幅を親要素の100%に（レスポンシブ対応） */
+    width: 100%;
+    /* 最大幅を350pxに制限（大きな画面でも適切なサイズを維持） */
+    max-width: 350px;
+    /* コンテンツがカードからはみ出した場合に隠す */
+    overflow: hidden;
+  }
+  
+  /* ===== 画像部分のスタイル ===== */
+  .card-image {
+    /* 画像を中央揃え */
+    text-align: center;
+    /* 上下に20px、左右に0pxの余白 */
+    padding: 20px 0;
+    /* 背景色を薄いグレーに */
+    background-color: #f0f0f0;
+  }
+  
+  .card-image img {
+    /* 画像サイズを固定（プレースホルダー画像と同じサイズ） */
+    width: 150px;
+    height: 150px;
+    /* 画像を円形に切り抜く */
+    border-radius: 50%;
+    /* 画像のサイズ変更時に比率を維持しつつ、指定範囲を埋める */
+    object-fit: cover;
+    /* 白い枠線を画像の周りに追加 */
+    border: 4px solid white;
+  }
+  
+  /* ===== テキストコンテンツ部分のスタイル ===== */
+  .card-content {
+    /* コンテンツの周りに余白を設定 */
+    padding: 20px;
+  }
+  
+  .name {
+    /* 名前の文字色を濃いグレーに */
+    color: #333;
+    /* フォントサイズを大きく */
+    font-size: 24px;
+    /* 下部のマージンで次の要素との間隔を設定 */
+    margin-bottom: 5px;
+  }
+  
+  .title {
+    /* 肩書きの文字色をグレーに */
+    color: #666;
+    /* フォントサイズを中程度に */
+    font-size: 16px;
+    /* 下部のマージンで次の要素との間隔を設定 */
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    /* 説明文の文字色をグレーに */
+    color: #666;
+    /* フォントサイズを小さめに */
+    font-size: 14px;
+    /* 行の高さを設定（読みやすさの向上） */
+    line-height: 1.5;
+    /* 下部のマージンで次の要素との間隔を設定 */
+    margin-bottom: 20px;
+  }
+  
+  /* ===== ソーシャルリンク部分のスタイル ===== */
+  .social-links {
+    /* リンクを横並びに（フレックスボックスレイアウト） */
+    display: flex;
+    /* リンク間の間隔を設定 */
+    gap: 10px;
+    /* 下部のマージンで次の要素との間隔を設定 */
+    margin-bottom: 20px;
+  }
+  
+  .social-link {
+    /* リンクの文字色を青系に */
+    color: #3498db;
+    /* 下線を削除 */
+    text-decoration: none;
+    /* フォントサイズを小さめに */
+    font-size: 14px;
+  }
+  
+  /* ホバー時（マウスカーソルを乗せた時）のスタイル */
+  .social-link:hover {
+    /* 下線を表示（インタラクションのフィードバック） */
+    text-decoration: underline;
+  }
+  
+  /* ===== お問い合わせボタンのスタイル ===== */
+  .contact-button {
+    /* ボタンの背景色を青系に */
+    background-color: #3498db;
+    /* ボタンのテキスト色を白に */
+    color: white;
+    /* ボーダーを削除 */
+    border: none;
+    /* 角を丸くする */
+    border-radius: 4px;
+    /* ボタン内の余白（上下10px、左右20px） */
+    padding: 10px 20px;
+    /* フォントサイズを中程度に */
+    font-size: 16px;
+    /* マウスポインタを指マークに（クリック可能の視覚的表現） */
+    cursor: pointer;
+    /* 幅を親要素の100%に（ボタンを横幅いっぱいに表示） */
+    width: 100%;
+  }
+  
+  /* ホバー時（マウスカーソルを乗せた時）のスタイル */
+  .contact-button:hover {
+    /* 背景色を少し暗くする（インタラクションのフィードバック） */
+    background-color: #2980b9;
+  }

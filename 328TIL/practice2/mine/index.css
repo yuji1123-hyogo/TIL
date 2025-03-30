@@ -1,0 +1,62 @@
+
+/* 基本的なリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    min-height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.profileCard{
+    max-width:350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileCardImage{
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    padding: 20px 0;
+}
+
+.profileCardImage img{
+    width: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: black 1px solid;
+}
+
+
+.profileCardText{
+    padding: 20px;
+}
+
+.username{
+    margin-bottom: 5px;
+}
+
+.description{
+    padding: 1rem;
+}
+
+
+.profileLink{
+    padding: 0.5rem 0;
+    gap: 1rem;
+}
+
+.profileLink a{
+    padding: 0.5rem 0;
+    gap: 1rem;
+    text-decoration: none;
+}

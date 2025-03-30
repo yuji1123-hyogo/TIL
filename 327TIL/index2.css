@@ -14,3 +14,9 @@ div{
 .con{
     background-size: contain;
 }
+
+
+/* 背景画像の縮尺はback-ground-sizeの指定方法で調節できる。
+見切れたくない場合はcontainを使う。
+要素全体を埋めたいならconverを使う 
+*/
