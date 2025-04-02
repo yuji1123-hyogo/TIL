@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechApp - あなたのデジタルライフをシンプルに</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="#">TechApp</a>
+      </div>
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle" aria-label="メニューを開く">
+          <span class="burger-icon"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="#features">機能</a></li>
+          <li><a href="#pricing">料金プラン</a></li>
+          <li><a href="#testimonials">お客様の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-outline">ログイン</a>
+        <a href="#" class="btn btn-primary">無料で試す</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>あなたのデジタルライフを<br>シンプルに、スマートに</h1>
+        <p class="hero-description">TechAppはあなたの日常をより効率的にするための最新テクノロジーを搭載したアプリケーションです。様々なデバイスで連携し、あなたの生活をサポートします。</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary btn-large">無料で始める</a>
+          <a href="#" class="btn btn-outline btn-large">詳細を見る</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">2M+</span>
+            <span class="stat-label">ユーザー</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.8</span>
+            <span class="stat-label">評価</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">国と地域</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://placehold.jp/600x400.png" alt="TechAppのイメージ">
+      </div>
+    </div>
+  </section>
+
+  <!-- 機能セクション -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>主な機能</h2>
+        <p>TechAppが提供する革新的な機能をご紹介します。</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>リアルタイム同期</h3>
+          <p>すべてのデバイスでデータをリアルタイムに同期し、いつでもどこでも最新の情報にアクセスできます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>セキュアな保存</h3>
+          <p>エンドツーエンドの暗号化で、あなたの大切なデータを安全に保護します。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3>高速パフォーマンス</h3>
+          <p>最適化されたアルゴリズムにより、スムーズで高速な操作体験を提供します。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cog"></i>
+          </div>
+          <h3>カスタマイズ</h3>
+          <p>自分好みにカスタマイズして、あなただけのワークフローを作成できます。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>高度な分析</h3>
+          <p>使用状況を詳細に分析し、より良い意思決定をサポートします。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>チーム連携</h3>
+          <p>チームでの共同作業を効率化し、コミュニケーションをスムーズにします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 料金プランセクション -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>料金プラン</h2>
+        <p>あなたのニーズに合わせた柔軟なプランをご用意しています。</p>
+      </div>
+      <div class="pricing-toggle">
+        <span>月払い</span>
+        <label class="toggle">
+          <input type="checkbox" id="billing-toggle">
+          <span class="slider"></span>
+        </label>
+        <span>年払い <span class="discount">20% OFF</span></span>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>ベーシック</h3>
+            <div class="pricing-price">
+              <span class="currency">¥</span>
+              <span class="amount">1,000</span>
+              <span class="period">/月</span>
+            </div>
+            <p>個人利用に最適なプラン</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> 主要機能へのアクセス</li>
+            <li><i class="fas fa-check"></i> 5GBのストレージ</li>
+            <li><i class="fas fa-check"></i> 1デバイスで利用可能</li>
+            <li><i class="fas fa-check"></i> 基本サポート</li>
+            <li class="disabled"><i class="fas fa-times"></i> 高度な分析ツール</li>
+            <li class="disabled"><i class="fas fa-times"></i> チーム連携機能</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">プランを選択</a>
+        </div>
+        <div class="pricing-card popular">
+          <div class="popular-badge">人気</div>
+          <div class="pricing-header">
+            <h3>プロフェッショナル</h3>
+            <div class="pricing-price">
+              <span class="currency">¥</span>
+              <span class="amount">2,500</span>
+              <span class="period">/月</span>
+            </div>
+            <p>フリーランスやプロフェッショナルに</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> すべての基本機能</li>
+            <li><i class="fas fa-check"></i> 50GBのストレージ</li>
+            <li><i class="fas fa-check"></i> 3デバイスで利用可能</li>
+            <li><i class="fas fa-check"></i> 優先サポート</li>
+            <li><i class="fas fa-check"></i> 高度な分析ツール</li>
+            <li class="disabled"><i class="fas fa-times"></i> チーム連携機能</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full">プランを選択</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>ビジネス</h3>
+            <div class="pricing-price">
+              <span class="currency">¥</span>
+              <span class="amount">5,000</span>
+              <span class="period">/月</span>
+            </div>
+            <p>チームや企業向けの高機能プラン</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> すべてのプロ機能</li>
+            <li><i class="fas fa-check"></i> 無制限のストレージ</li>
+            <li><i class="fas fa-check"></i> 無制限のデバイス</li>
+            <li><i class="fas fa-check"></i> 24/7専用サポート</li>
+            <li><i class="fas fa-check"></i> 高度な分析ツール</li>
+            <li><i class="fas fa-check"></i> チーム連携機能</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full">プランを選択</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お客様の声セクション -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>お客様の声</h2>
+        <p>TechAppをご利用いただいているお客様からのフィードバックです。</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"TechAppを導入してから、日々のタスク管理が格段に楽になりました。特にデバイス間の同期がシームレスで、いつでもどこでも作業を続けられるのが素晴らしいです。"</p>
+          <div class="testimonial-author">
+            <img src="https://placehold.jp/80x80.png" alt="佐藤さんの写真">
+            <div class="author-info">
+              <h4>佐藤 健太</h4>
+              <p>フリーランスデザイナー</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="testimonial-text">"チーム全体がTechAppを使うようになってから、プロジェクト管理の効率が大幅に向上しました。情報共有がスムーズになり、締め切りを守ることが容易になりました。"</p>
+          <div class="testimonial-author">
+            <img src="https://placehold.jp/80x80.png" alt="田中さんの写真">
+            <div class="author-info">
+              <h4>田中 美咲</h4>
+              <p>プロジェクトマネージャー</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"セキュリティ面が非常に優れており、機密性の高いデータも安心して保存できます。使いやすさと安全性を両立している点が、他のアプリにはない魅力です。"</p>
+          <div class="testimonial-author">
+            <img src="https://placehold.jp/80x80.png" alt="鈴木さんの写真">
+            <div class="author-info">
+              <h4>鈴木 大輔</h4>
+              <p>IT企業 CTO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- よくある質問セクション -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>よくある質問</h2>
+        <p>TechAppについてよくいただく質問にお答えします。</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">TechAppは無料で試せますか？</h3>
+          <p class="faq-answer">はい、14日間の無料トライアルをご用意しています。クレジットカード情報は不要で、すべての機能をお試しいただけます。</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">データの同期はどのように行われますか？</h3>
+          <p class="faq-answer">TechAppは自動的にクラウドとデータを同期し、すべてのデバイスで最新の状態を維持します。オフライン時も編集可能で、オンラインに戻ると自動的に同期されます。</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">プランはいつでも変更できますか？</h3>
+          <p class="faq-answer">はい、いつでもプランのアップグレードまたはダウングレードが可能です。変更は即時反映され、料金は日割り計算されます。</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">データのセキュリティはどうなっていますか？</h3>
+          <p class="faq-answer">TechAppはエンドツーエンドの暗号化を採用しており、お客様のデータは安全に保護されています。また、定期的なセキュリティ監査を実施し、最高レベルの安全性を維持しています。</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">複数のデバイスで利用できますか？</h3>
+          <p class="faq-answer">ご契約のプランによって利用可能なデバイス数が異なります。ベーシックプランは1デバイス、プロフェッショナルプランは3デバイス、ビジネスプランは無制限のデバイスでご利用いただけます。</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">解約はいつでも可能ですか？</h3>
+          <p class="faq-answer">はい、いつでも解約可能です。解約後も現在の請求期間の終了まではサービスをご利用いただけます。自動更新を停止するだけで、追加の手続きは不要です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせセクション -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>お問い合わせ</h2>
+          <p>ご質問やご不明点がございましたら、お気軽にお問い合わせください。</p>
+          <div class="contact-methods">
+            <div class="contact-method">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>メール</h3>
+                <p>support@techapp.example.com</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>電話</h3>
+                <p>03-1234-5678 (平日 9:00-18:00)</p>
+              </div>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>所在地</h3>
+                <p>〒100-0001 東京都千代田区1-1-1 テックビル8F</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">件名</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">送信する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <a href="#" class="footer-logo">TechApp</a>
+          <p>あなたのデジタルライフをサポートする最新テクノロジーを搭載したアプリケーション。</p>
+          <p class="copyright">&copy; 2025 TechApp. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link-group">
+            <h3>製品について</h3>
+            <ul>
+              <li><a href="#">機能</a></li>
+              <li><a href="#">料金プラン</a></li>
+              <li><a href="#">ダウンロード</a></li>
+              <li><a href="#">リリースノート</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-group">
+            <h3>会社情報</h3>
+            <ul>
+              <li><a href="#">私たちについて</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">ブログ</a></li>
+              <li><a href="#">プレスリリース</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-group">
+            <h3>サポート</h3>
+            <ul>
+              <li><a href="#">ヘルプセンター</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">コミュニティ</a></li>
+              <li><a href="#">ステータス</a></li>
+            </ul>
+          </div>
+          <div class="footer-link-group">
+            <h3>法的情報</h3>
+            <ul>
+              <li><a href="#">利用規約</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">セキュリティ</a></li>
+              <li><a href="#">特定商取引法に基づく表記</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
