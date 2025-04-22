@@ -1,0 +1,18 @@
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.6/ext/stringio
+/home/yuji/.anyenv/envs/rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-c0ohbn sitelibdir\=./.gem.20250421-5180-c0ohbn clean
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-c0ohbn sitelibdir\=./.gem.20250421-5180-c0ohbn
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-c0ohbn sitelibdir\=./.gem.20250421-5180-c0ohbn install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250421-5180-c0ohbn
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.6/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-c0ohbn sitelibdir\=./.gem.20250421-5180-c0ohbn clean

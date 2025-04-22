@@ -1,0 +1,30 @@
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+/home/yuji/.anyenv/envs/rbenv/versions/3.2.2/bin/ruby extconf.rb
+checking for yaml.h... yes
+checking for yaml_get_version() in -lyaml... yes
+creating Makefile
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-tn8qlo sitelibdir\=./.gem.20250421-5180-tn8qlo clean
+cd libyaml && make clean
+/bin/sh: 1: cd: can't cd to libyaml
+make: [Makefile:283: clean-so] Error 2 (ignored)
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-tn8qlo sitelibdir\=./.gem.20250421-5180-tn8qlo
+compiling psych.c
+compiling psych_emitter.c
+compiling psych_parser.c
+compiling psych_to_ruby.c
+compiling psych_yaml_tree.c
+linking shared-object psych.so
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-tn8qlo sitelibdir\=./.gem.20250421-5180-tn8qlo install
+/usr/bin/install -c -m 0755 psych.so ./.gem.20250421-5180-tn8qlo
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/psych-5.2.3/ext/psych
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-tn8qlo sitelibdir\=./.gem.20250421-5180-tn8qlo clean
+cd libyaml && make clean
+/bin/sh: 1: cd: can't cd to libyaml
+make: [Makefile:283: clean-so] Error 2 (ignored)

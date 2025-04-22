@@ -1,0 +1,18 @@
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/home/yuji/.anyenv/envs/rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-8nmumw sitelibdir\=./.gem.20250421-5180-8nmumw clean
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-8nmumw sitelibdir\=./.gem.20250421-5180-8nmumw
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-8nmumw sitelibdir\=./.gem.20250421-5180-8nmumw install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250421-5180-8nmumw/racc
+
+current directory: /home/yuji/programing/learning/TIL/SimpleBBS/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250421-5180-8nmumw sitelibdir\=./.gem.20250421-5180-8nmumw clean

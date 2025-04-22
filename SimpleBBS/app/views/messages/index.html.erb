@@ -1,0 +1,12 @@
+<h1>Messages#index</h1>
+<ul>
+    <% @messages&.each { |m| %>
+        <li><%= m.body %></li>
+    <% } %>
+
+</ul>
+
+<%= form_with(model:Message.new ,local:true) do |f| %>
+    <%= f.text_area:body %>
+    <%= f.submit 'submit'%>
+<% end %>
