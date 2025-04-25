@@ -11,7 +11,7 @@ class Gate
 
 
     def calc_fares(ticket)
-        from = STATION.index(ticket.enter_at)
+        from = STATION.index(ticket.stamped_at)
         to = STATION.index(@name)
         FARES[to - from -1]
     end
@@ -28,3 +28,5 @@ class Gate
         fare <= ticket.fare
     end
 end
+
+
