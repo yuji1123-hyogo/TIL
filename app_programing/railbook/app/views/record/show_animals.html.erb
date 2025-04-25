@@ -1,0 +1,13 @@
+<ul>
+<% @animals.each do |animal| %>
+  <li>
+    <%= animal.name %>: <%= animal.gender %>
+    <% case animal
+      when Dog then concat '（ワン）'
+      when Cat then concat '（ニャー）'
+      when Hamster then concat '（チュー）'
+      else concat '(...)'
+    end %>
+  </li>
+<% end %>
+</ul>

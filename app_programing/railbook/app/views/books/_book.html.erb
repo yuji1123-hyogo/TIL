@@ -1,0 +1,48 @@
+<div id="<%= dom_id book %>">
+  <p>
+    <strong>Isbn:</strong>
+    <%= book.isbn %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= book.title %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= book.price %>
+  </p>
+
+  <p>
+    <strong>Publisher:</strong>
+    <%= book.publisher %>
+  </p>
+
+  <p>
+    <strong>Published:</strong>
+    <%= book.published %>
+  </p>
+
+  <p>
+    <strong>Dl:</strong>
+    <%= book.dl %>
+  </p>
+
+</div>
+
+
+<%
+=begin%>
+ <%# リストに連番を付与 %>
+<p>
+<%#= book_iteration.index + 1 %>
+<%= book.title %><br />
+<%= book.publisher %>/発行<br />
+定価 <%= book.price %>円（＋税）<br />
+ISBN <%= book.isbn %><br />
+発刊日： <%= book.published %>
+</p>
+<%
+=end%>
+

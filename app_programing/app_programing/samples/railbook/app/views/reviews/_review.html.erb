@@ -1,0 +1,31 @@
+<div id="<%= dom_id review %>">
+  <p>
+    <strong>Book:</strong>
+    <%= review.book_id %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= review.user_id %>
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    <%= review.status %>
+  </p>
+
+  <p>
+    <strong>Body:</strong>
+    <%= review.body %>
+  </p>
+
+</div>
+
+<%
+=begin%>
+<%# 親子関係にあるモデルでキャッシュ依存性を設定 %>
+<% cache(review) do %>
+  <li><%= review.body %>（<%= review.updated_at %>）</li>
+<% end %>
+<%
+=end%>

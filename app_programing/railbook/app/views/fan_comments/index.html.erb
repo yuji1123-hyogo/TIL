@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fan comments</h1>
+
+<div id="fan_comments">
+  <% @fan_comments.each do |fan_comment| %>
+    <%= render fan_comment %>
+    <p>
+      <%= link_to "Show this fan comment", fan_comment %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fan comment", new_fan_comment_path %>

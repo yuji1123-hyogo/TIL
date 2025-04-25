@@ -1,0 +1,5 @@
+<%= form_with(url: '/view/search') do |f| %>
+  <%= f.label :keywd, '検索キーワード' %>：
+  <%= f.text_field :keywd, value: 'Rails', size: 30 %>
+  <%= f.submit '検索' %>
+<% end %>

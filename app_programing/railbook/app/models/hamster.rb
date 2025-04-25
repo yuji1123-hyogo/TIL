@@ -1,0 +1,2 @@
+class Hamster < Animal
+end

@@ -1,3 +1,13 @@
 {
-    "terminal.integrated.shellArgs.linux": ["-l"]
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "app_programing/app_programing/storage/development.sqlite3",
+            "name": "sss"
+        }
+    ]
 }

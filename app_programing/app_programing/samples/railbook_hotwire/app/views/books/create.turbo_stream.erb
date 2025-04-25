@@ -1,0 +1,13 @@
+<%#= turbo_stream.prepend 'books', @book %>
+
+<%= turbo_stream.prepend 'books' do %>
+  <%= render @book %>
+  <p>
+    <%= link_to "Show this book", @book %>
+  </p>
+<% end %>
+
+
+<%= turbo_stream.update 'new_book' do %>
+  <%= link_to "New book", new_book_path %>
+<% end %>

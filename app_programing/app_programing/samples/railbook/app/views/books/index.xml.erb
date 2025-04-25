@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<books>
+  <% @books.each do |b| %>
+    <book isbn="<%= b.isbn %>">
+      <title><%= b.title %></title>
+      <price><%= b.price %></price>
+      <publisher><%= b.publisher %></publisher>
+      <published><%= b.published %></published>
+      <dl><%= b.dl %></dl>
+    </book>
+  <% end %>
+</books>

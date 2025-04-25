@@ -1,0 +1,31 @@
+{
+    "editor.tabSize": 2,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "my",
+            "database": "${workspaceFolder:railbook_multidb}/myapp_dev"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "my_replica",
+            "database": "${workspaceFolder:railbook_multidb}/myapp_replica_dev"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sub",
+            "database": "${workspaceFolder:railbook_multidb}/subapp_dev"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sub_replica",
+            "database": "${workspaceFolder:railbook_multidb}/subapp_replica_dev"
+        }
+    ]
+}

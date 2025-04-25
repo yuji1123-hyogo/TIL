@@ -1,0 +1,12 @@
+<div id="list">
+  <%= render partial: 'books/book', collection: @books %>
+  <%#= render @books %>
+
+<%
+=begin%>
+  <% @books.each do |book| %>
+    <%= render 'books/book', book: book %>
+  <% end %>
+<%
+=end%>
+</div>

@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mysql_1:
+  book: mysql
+  user: isatou
+  status: 0
+  body: 図が多く概念の説明が丁寧で初心者に優しい本です。
+
+mysql_2:
+  book: mysql
+  user: hsuzuki
+  status: 1
+  body: 用例が多くて参考になります。値を変えて練習しています。
+
+java_1:
+  book: java
+  user: isatou
+  status: 0
+  body: とても役に立ちます。サンプルがたくさん紹介されていてお勧めの一冊です。
+
+java_2:
+  book: java
+  user: tyamamoto
+  status: 1
+  body: 丁寧に書かれています。サンプルも多く、分かりやすくて良いです。
+
+java_3:
+  book: java
+  user: shayashi
+  status: 1
+  body: 超初心者の私には少し難しいです。でも、真似して書いているうちに少しずつ良さが分かるようになってきました。
+
+react_1:
+  book: react
+  user: yyamada
+  status: 1
+  body: 環境構築から順を追って丁寧に書かれていて、分かりやすいです。
+
+react_2:
+  book: react
+  user: isatou
+  status: 1
+  body: 何から手を付けたらよいか分からなかったが、この本でコツコツ勉強しています。
+
+nuxt:
+  book: nuxt
+  user: shayashi
+  status: 2
+  body: かなりボリュームのある本で、内容も充実しています。本書で学んだことは、他でも生かせそうです。
+
+html:
+  book: html
+  user: hsuzuki
+  status: 1
+  body: 基礎からきちんと詳しく解説してあって、作りながら楽しく学べました。

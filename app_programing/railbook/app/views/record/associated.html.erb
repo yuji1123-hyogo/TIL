@@ -1,0 +1,14 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>書名</th><th>レビュー</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @reviews.flatten.each do |review| %>
+    <tr>
+      <td><%= review.book.title %></td><td><%= review.body %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

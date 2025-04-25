@@ -1,0 +1,64 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mysql_1:
+  id: 1
+  book_id: 1
+  user_id: 2
+  status: 0
+  body: 図が多く概念の説明が丁寧で初心者に優しい本です。
+
+mysql_2:
+  id: 2
+  book_id: 1
+  user_id: 3
+  status: 1
+  body: 用例が多くて参考になります。値を変えて練習しています。
+
+java_1:
+  id: 3
+  book_id: 2
+  user_id: 2
+  status: 0
+  body: とても役に立ちます。サンプルがたくさん紹介されていてお勧めの一冊です。
+
+java_2:
+  id: 4
+  book_id: 2
+  user_id: 4
+  status: 1
+  body: 丁寧に書かれています。サンプルも多く、分かりやすくて良いです。
+
+java_3:
+  id: 5
+  book_id: 2
+  user_id: 5
+  status: 1
+  body: 超初心者の私には少し難しいです。でも、真似して書いているうちに少しずつ良さが分かるようになってきました。
+
+react_1:
+  id: 6
+  book_id: 3
+  user_id: 1
+  status: 1
+  body: 環境構築から順を追って丁寧に書かれていて、分かりやすいです。
+
+react_2:
+  id: 7
+  book_id: 3
+  user_id: 1
+  status: 1
+  body: 何から手を付けたらよいか分からなかったが、この本でコツコツ勉強しています。
+
+nuxt:
+  id: 8
+  book_id: 4
+  user_id: 5
+  status: 2
+  body: かなりボリュームのある本で、内容も充実しています。本書で学んだことは、他でも生かせそうです。
+
+html:
+  id: 9
+  book_id: 5
+  user_id: 3
+  status: 1
+  body: 基礎からきちんと詳しく解説してあって、作りながら楽しく学べました。

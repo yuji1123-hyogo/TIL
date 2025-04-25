@@ -1,0 +1,7 @@
+<%= turbo_stream.update @book do %>
+  <%= render @book %>
+  <p>
+    <%= link_to "Edit this book", edit_book_path(@book) %>
+    <%= button_to "Destroy this book", @book, method: :delete %>
+  </p>
+<% end %>

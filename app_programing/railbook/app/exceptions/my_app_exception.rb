@@ -1,0 +1,2 @@
+class MyAppException < StandardError
+end

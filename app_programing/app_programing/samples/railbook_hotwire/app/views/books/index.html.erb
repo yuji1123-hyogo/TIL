@@ -1,0 +1,42 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Books</h1>
+
+<%
+=begin%>
+<%# 自動生成されたコード%>
+<div id="books">
+  <% @books.each do |book| %>
+    <%= render book %>
+    <p>
+      <%= link_to "Show this book", book %>
+    </p>
+  <% end %>
+</div>
+<%
+=end%>
+
+<%# 一覧から編集／削除を行う場合%>
+<div id="books">
+  <% @books.each do |book| %>
+    <%= turbo_frame_tag book do %>
+      <%= render book %>
+      <p>
+        <%= link_to "Edit this book", edit_book_path(book) %>
+        <%= button_to "Destroy this book", book, method: :delete %>
+      </p>
+    <% end %>
+  <% end %>
+</div>
+
+<%#= link_to "New book", new_book_path %>
+
+<%# Hotwireの無効化 %>
+<%#= link_to "New book", new_book_path, data: {turbo: false} %>
+
+
+<%# フレームを使用 %>
+<%= turbo_frame_tag "new_book" do %>
+  <%= link_to "New book", new_book_path %>
+  <hr />
+<% end %>

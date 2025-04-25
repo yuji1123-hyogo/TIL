@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railbook</title>
+
+<%
+=begin%>
+ <title><%= @title || 'Rails入門' %></title>
+<%
+=end%>
+
+<%
+=begin%>
+ <title><%= yield(:title).presence || 'Rails入門' %></title>
+<%
+=end%>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%#= csp_meta_tag %>
+
+    <%#= favicon_link_tag %>
+    <%#= favicon_link_tag 'favicon.ico' %>
+    <%#= favicon_link_tag 'fav-icon.png', type: 'image/png' %>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_importmap_tags %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <%= yield %>
+    <%#= content_for?(:content) ? yield(:content) : yield %>
+  </body>
+</html>

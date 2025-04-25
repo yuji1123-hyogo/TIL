@@ -1,0 +1,6 @@
+<%= mail_to 'admin@example.com' %><br />
+
+<%= mail_to 'admin@example.com', 'お問い合わせはこちら' %><br />
+
+<%= mail_to 'admin@example.com', nil,
+  subject: '問い合わせ', cc: 'support@example.com' %>

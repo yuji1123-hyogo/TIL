@@ -1,0 +1,13 @@
+{
+    "editor.tabSize": 2,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "railbook",
+            "database": "${workspaceFolder:railbook}/storage/development.sqlite3"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :username, style: "display: block" %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div>
+    <%= form.label :password_digest, style: "display: block" %>
+    <%= form.text_field :password_digest %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+<%
+=begin%>
+ <div>
+    <%= form.label :email_confirmation, style: "display: block" %>
+    <%= form.text_field :email_confirmation %>
+  </div>
+<%
+=end%>
+
+  <div>
+    <%= form.label :dm, style: "display: block" %>
+    <%= form.check_box :dm %>
+  </div>
+
+  <div>
+    <%= form.label :roles, style: "display: block" %>
+    <%= form.text_field :roles %>
+  </div>
+  <div>
+    <%= form.label :reviews_count, style: "display: block" %>
+    <%= form.number_field :reviews_count %>
+  </div>
+  <div>
+    <%= form.label :agreement, style: "display: block" %>
+    <%= form.check_box :agreement %>
+    <%#= form.check_box :agreement, {}, 'yes' %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

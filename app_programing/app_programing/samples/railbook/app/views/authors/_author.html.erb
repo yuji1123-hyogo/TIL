@@ -1,0 +1,48 @@
+<div id="<%= dom_id author %>">
+  <p>
+    <strong>User:</strong>
+    <%= author.user_id %>
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= author.name %>
+  </p>
+
+  <p>
+    <strong>Birth:</strong>
+    <%= author.birth %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= author.address %>
+  </p>
+
+  <p>
+    <strong>Photo:</strong>
+    <%= link_to author.photo.filename, author.photo if author.photo.attached? %>
+
+    <%# if author.photo.attached?
+      concat image_tag author.photo
+    end %>
+
+    <%# if author.photo.attached?
+      concat image_tag author.photo.representation(resize_to_limit: [200, 200])
+    end %>
+
+    <%# if author.photo.attached?
+      concat image_tag author.photo.variant(:thumb)
+    end %>
+
+    <%# 複数ファイルの場合 %>
+    <%# author.photos.each do |p|
+      concat image_tag p.representation(resize_to_limit: [100, 100])
+    end %>
+
+    <%# ファイルのメタ情報を取得 %>
+    <%# if author.photo.analyzed?
+      concat "#{author.photo.metadata[:width]}×#{author.photo.metadata[:height]}"
+    end %>
+  </p>
+</div>

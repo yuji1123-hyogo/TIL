@@ -1,0 +1,5 @@
+現在時刻（キャッシュなし）：<%= Time.now %><br />
+<% cache do %>
+<%# cache(suffix: 'footer') do %>
+現在時刻（キャッシュあり）：<%= Time.now %><br />
+<% end %>

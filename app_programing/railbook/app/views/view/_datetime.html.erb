@@ -1,0 +1,11 @@
+<%# locals: (datetime: Time.now, type: :datetime) -%>
+<% case type %>
+  <% when :datetime %>
+    <p><%= datetime.strftime("%Y年%m月%d日 %H:%M:%S") %></p>
+  <% when :date %>
+    <p><%= datetime.strftime("%Y年%m月%d日") %></p>
+  <% when :time %>
+    <p><%= datetime.strftime("%H:%M:%S") %></p>
+  <% else %>
+    <p>Invalid type</p>
+<% end %>

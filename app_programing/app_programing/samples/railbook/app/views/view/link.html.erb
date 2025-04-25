@@ -1,0 +1,12 @@
+<%= link_to 'サポートサイト', 'https://wings.msn.to/' %>
+
+<%= link_to 'トップ', { controller: :hello, action: :index },
+  id: :link, class: :menu %>
+
+<% @book = Book.find(1) %>
+<%= link_to book_path(@book) do
+  image_tag "https://wings.msn.to/books/#{@book.isbn}/#{@book.isbn}.jpg"
+end %>
+
+<%#= link_to 'トップ', controller: :hello, action: :index,
+  id: :link, class: :menu  %><br />

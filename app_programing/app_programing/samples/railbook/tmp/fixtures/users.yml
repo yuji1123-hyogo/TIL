@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+yyamada:
+  username: yyamada
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: yyamada@example.com
+  dm: true
+  roles: admin,manager
+  reviews_count: 2
+
+isatou:
+  username: isatou
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: isatou@example.com
+  dm: false
+  roles: admin
+  reviews_count: 2
+
+hsuzuki:
+  username: hsuzuki
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: hsuzuki@example.com
+  dm: true
+  roles: manager
+  reviews_count: 2
+
+tyamamoto:
+  username: tyamamoto
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: tyamamoto@example.com
+  dm: false
+  roles: member
+  reviews_count: 1
+
+shayashi:
+  username: shayashi
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: shayashi@example.com
+  dm: true
+  roles: member
+  reviews_count: 2
+
+nkakeya:
+  username: nkakeya
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: nami-piano@nifty.com
+  dm: true
+  roles: manager,member
+  reviews_count: 0
+
+guest:
+  username: guest
+  password_digest: $2a$10$uTwYyniemA7y7.z80yw17uqmRzN/LggEoSzUe.tXGdCUWPvYp9M2m
+  email: guest@example.com
+  dm: true
+  roles: member
+  reviews_count: 0

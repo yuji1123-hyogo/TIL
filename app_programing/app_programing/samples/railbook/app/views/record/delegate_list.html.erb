@@ -1,0 +1,20 @@
+<ul>
+
+<%
+=begin%>
+ <% @entries.each do |entry|
+  if entry.comment? %>
+    <li><%= entry.comment.body %>（<%= entry.name %>）</li>
+  <% else %>
+    <li><%= entry.note.header %>: <%= entry.note.text %>
+      （<%= entry.name %>）</li>
+  <% end
+end %>
+<%
+=end%>
+
+
+  <% @entries.each do |entry| %>
+    <li><%= entry.body %>（<%= entry.name %>）</li>
+  <% end %>
+</ul>
