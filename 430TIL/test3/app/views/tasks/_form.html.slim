@@ -1,0 +1,18 @@
+.nav.justify-content-end
+=link_to '一覧', tasks_path,class:'nav-link'
+
+- if task.errors.present?
+  ul#error_explanation
+    - task.errors.full_messages.each do |message|
+      li = message
+
+
+= form_with model: task,local:true do |f|
+   .form-group
+    = f.label :name
+    = f.text_field :name ,class: 'form-control',id: :name
+   .form-group
+    = f.label :description
+    = f.text_area :description,class: 'form-control',id: 'task-description'
+
+    = f.submit '送信',class: 'btn btn-primary'

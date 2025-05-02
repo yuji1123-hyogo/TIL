@@ -1,0 +1,7 @@
+.test1{
+    background-color: aquamarine;
+    color: antiquewhite;
+    &:hover{
+        background-color: aqua;
+    }
+}
