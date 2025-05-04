@@ -13,13 +13,25 @@ html
     = javascript_include_tag "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 
   body
-  .container 
-    - if flash.notice.present?
-      .alert.alert-success = flash.notice
+
+  
 
 
 
-    = yield
+.container 
+  ul.navbar-nav.ml-auto 
+    -  if current_user 
+       li.nav-item= link_to 'タスク一覧',task_path,class:'nav-link'
+       li.nav-item= link_to 'タスク一覧',task_path,class:'nav-link'
+       li.nav-item= link_to 'タスク一覧',task_path,class:'nav-link'
+    -  else 
+       li.nav-item= link_to 'ログイン',login_path,class:'nav-link'
+
+  - if flash.notice.present?
+    .alert.alert-success = flash.notice
+
+
+  = yield
 
 .container.mt-5
   .alert.alert-success role="alert"
